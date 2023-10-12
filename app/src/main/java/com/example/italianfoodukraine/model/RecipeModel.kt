@@ -2,7 +2,7 @@ package com.example.italianfoodukraine.model
 
 class RecipeModel(
     val id: Int, // Unique ID for the recipe
-    val category: String,
+    val categoryOfFood: String,
     val dishTitle: String,
     val imageResId: Int,
     val description: String,

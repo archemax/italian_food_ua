@@ -18,7 +18,7 @@ fun NavigationComponent() {
     val toBackScreen = { navController.popBackStack() }
     val toOneRecipeScreen =
         { id: String -> navController.navigate("${Screen.ONE_RECIPE_SCREEN.name}/$id") }
-    val configuration = LocalConfiguration.current
+    val configurationOfScreen = LocalConfiguration.current
 
     NavHost(
         navController = navController,
@@ -30,7 +30,7 @@ fun NavigationComponent() {
             route = Screen.MAIN_USER_SCREEN.name
         ) {
             MyMainDisplay(
-                //configuration = Configuration(),
+                configurationOfScreen = configurationOfScreen,
                 toOneRecipeScreen = toOneRecipeScreen,
             )
         }
@@ -42,6 +42,7 @@ fun NavigationComponent() {
             val routeId = it.arguments?.getString("id").orEmpty()
 
             MyOneRecipeDispaly(
+                //configurationOfScreen = configurationOfScreen,
                 navController = navController,
                 routeId = routeId
 

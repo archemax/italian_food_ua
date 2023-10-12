@@ -1,6 +1,7 @@
 package com.example.italianfoodukraine.user_interface
 
 import android.annotation.SuppressLint
+import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -33,6 +34,7 @@ import androidx.compose.material3.SearchBarDefaults
 import androidx.compose.material3.SelectableChipElevation
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
@@ -54,20 +56,21 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.italianfoodukraine.R
 import com.example.italianfoodukraine.model.RecipeModel
 import com.example.italianfoodukraine.user_interface.Displays.main_display.MainDisplayViewModel
+import kotlinx.coroutines.flow.StateFlow
 
 @SuppressLint("UnrememberedMutableState")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyMainDisplay(
+    configurationOfScreen: Configuration,
     viewModel: MainDisplayViewModel = hiltViewModel(),
     toOneRecipeScreen: (String) -> Unit,
 ) {
-    val state = viewModel.state
+    val bigListOfRecipesState = viewModel.state
     val queryState = rememberSaveable { mutableStateOf("") }
     val selectedCategory = rememberSaveable { mutableStateOf("") }
     val finalFilteredList =
         viewModel.myFilter(query = queryState.value, category = selectedCategory.value)
-
 
     val categoriesOfFood = listOf(
         "Антипасти",
@@ -82,18 +85,15 @@ fun MyMainDisplay(
     )
 
     Scaffold(
-        modifier = Modifier
-            .fillMaxSize(),
+        modifier = Modifier.fillMaxSize(),
         topBar = {},
-        bottomBar = { },
+        bottomBar = {},
     ) { paddingValues ->
-
         Column(
             modifier = Modifier
                 .padding(paddingValues)
                 .fillMaxSize()
                 .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
-//
         ) {
             SearchBar(
                 query = queryState.value,
@@ -123,93 +123,114 @@ fun MyMainDisplay(
                     .fillMaxWidth()
                     .padding(top = 24.dp, start = 0.dp, end = 0.dp)
             ) {}
-            Spacer(modifier = Modifier.height(16.dp))
-            Text(
-                text = stringResource(R.string.whatShallWeCook),
-                style = MaterialTheme.typography.headlineLarge
+            MainDisplayVerticalLayout(
+                //що треба передати
+                configurationOfScreen = configurationOfScreen,
+                toOneRecipeScreen = toOneRecipeScreen,
+                bigListOfRecipesState = bigListOfRecipesState,
+                categoriesOfFood = categoriesOfFood,
+                selectedCategory = selectedCategory,
+                finalFilteredList = finalFilteredList,
+                queryState = queryState
             )
-
-            Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
-                categoriesOfFood.forEach { category ->
-                    val isSelected = category == selectedCategory.value
-                    val myElevation: SelectableChipElevation = if (isSelected) {
-                        FilterChipDefaults.filterChipElevation(8.dp)
-                    } else {
-                        FilterChipDefaults.filterChipElevation(0.dp)
-                    }
-
-                    ElevatedFilterChip(
-                        selected = isSelected,
-                        onClick = {
-                            selectedCategory.value = if (isSelected) "" else category
-                        },
-                        elevation = myElevation,
-
-                        label = {
-                            Text(
-                                text = category,
-                                style = TextStyle(
-                                    fontSize = 12.sp,
-                                    lineHeight = 20.sp,
-                                    fontFamily = FontFamily(Font(R.font.montserrat_semi_bold)),
-                                    fontWeight = FontWeight(500),
-                                    color = Color(0xFF3F486C),
-                                    textAlign = TextAlign.Center,
-                                    letterSpacing = 0.1.sp,
-                                )
-                            )
-                        },
+        }
+    }
+}
 
 
-                        border = FilterChipDefaults.filterChipBorder(
-                            borderColor = Color(0xFF848EB2),
-                            selectedBorderColor = Color(0xFF848EB2), selectedBorderWidth = 1.dp
-                        ),
-                        colors = FilterChipDefaults.filterChipColors(
-                            selectedContainerColor = Color(0xFFECEFFB)
-                        ),
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MainDisplayVerticalLayout(
+    configurationOfScreen: Configuration, // ok
+    bigListOfRecipesState: StateFlow<List<RecipeModel>>,
+    categoriesOfFood: List<String>,
+    selectedCategory: MutableState<String>,
+    queryState: MutableState<String>,
+    toOneRecipeScreen: (String) -> Unit,
+    finalFilteredList: List<RecipeModel>,
 
 
-                        )
-                    Spacer(modifier = Modifier.padding(end = 4.dp))
+) {
+    Spacer(modifier = Modifier.height(16.dp))
+    Text(
+        text = stringResource(R.string.whatShallWeCook),
+        style = MaterialTheme.typography.headlineLarge
+    )
 
-                }
+    Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
+        categoriesOfFood.forEach { category ->
+            val isSelected = category == selectedCategory.value
+            val myElevation: SelectableChipElevation = if (isSelected) {
+                FilterChipDefaults.filterChipElevation(8.dp)
+            } else {
+                FilterChipDefaults.filterChipElevation(0.dp)
             }
 
-////Recommended for you//////////////////////////////////////////////////////////////////////////////////
-
-            Text(
-                text = stringResource(R.string.Recommendations),
-                style = MaterialTheme.typography.headlineLarge
+            ElevatedFilterChip(
+                selected = isSelected,
+                onClick = {
+                    selectedCategory.value = if (isSelected) "" else category
+                },
+                elevation = myElevation,
+                label = {
+                    Text(
+                        text = category,
+                        style = TextStyle(
+                            fontSize = 12.sp,
+                            lineHeight = 20.sp,
+                            fontFamily = FontFamily(Font(R.font.montserrat_semi_bold)),
+                            fontWeight = FontWeight(500),
+                            color = Color(0xFF3F486C),
+                            textAlign = TextAlign.Center,
+                            letterSpacing = 0.1.sp,
+                        )
+                    )
+                },
+                border = FilterChipDefaults.filterChipBorder(
+                    borderColor = Color(0xFF848EB2),
+                    selectedBorderColor = Color(0xFF848EB2), selectedBorderWidth = 1.dp
+                ),
+                colors = FilterChipDefaults.filterChipColors(
+                    selectedContainerColor = Color(0xFFECEFFB)
+                ),
             )
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.padding(end = 4.dp))
+        }
+    }
+
+////Recommended for you//////////////////////////////////////////////////////////////////////////////////
+    Text(
+        text = stringResource(R.string.Recommendations),
+        style = MaterialTheme.typography.headlineLarge
+    )
+    Spacer(modifier = Modifier.height(12.dp))
 //////Recommended for you//////////////////////////////////////////////////////////////////////////////////
 
 
 //////LAZY COLUMN//////////////////////////////////////////////////////////////////////////////////////////////////
-            Column(modifier = Modifier.fillMaxSize()) {
-                LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    items(
-                        if (selectedCategory.value.isNotEmpty() || queryState.value.isNotEmpty()) {
-                            finalFilteredList
-                        } else {
-                            state.value
-                        }
-                    ) { recipe ->
-                        OneRecipeItem(
-                            oneRecipe = recipe,
-                            onClick = {
-                                toOneRecipeScreen(recipe.id.toString())
-                            }
-
-                        )
-                        Spacer(modifier = Modifier.height(16.dp))
-                    }
+    Column(modifier = Modifier.fillMaxSize()) {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+        ) {
+            items(
+                if (selectedCategory.value.isNotEmpty() || queryState.value.isNotEmpty()) {
+                    finalFilteredList
+                } else {
+                    bigListOfRecipesState.value
                 }
+            ) { recipe ->
+                OneRecipeItem(
+                    oneRecipe = recipe,
+                    onClick = {
+                        toOneRecipeScreen(recipe.id.toString())
+                    }
+                )
+                Spacer(modifier = Modifier.height(16.dp))
             }
         }
     }
 }
+
 
 @Composable
 fun OneRecipeItem(
@@ -279,7 +300,7 @@ fun OneRecipeItem(
                         tint = Color(0xFF3F486C)
                     )
                     Text(
-                        text = "  ${oneRecipe.category}",
+                        text = "  ${oneRecipe.categoryOfFood}",
                         maxLines = 1,
                         style = TextStyle(
                             fontSize = 8.sp,

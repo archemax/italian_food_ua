@@ -11,7 +11,7 @@ object BigListOfFood {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 2,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Буррата з тушкованими помідорами",
             imageResId = R.drawable.burrata_with_roasted_tomatoes_2,
             description =
@@ -44,7 +44,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 3,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Буррата з лимоном і базиліком",
             imageResId = R.drawable.burrata_with_lemons,
             description =
@@ -72,7 +72,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 4,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Брускетта",
             imageResId = R.drawable.bruschetta_1,
             description =
@@ -102,7 +102,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 5,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Салат Капрезе",
             imageResId = R.drawable.caprese_salad_5,
             description =
@@ -132,7 +132,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 6,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Прошутто з динею",
             imageResId = R.drawable.prosciutto_and_melon_3,
             description =
@@ -156,7 +156,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 7,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Смажені кальмари",
             imageResId = R.drawable.fried_calamari_7_small,
             description =
@@ -186,7 +186,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 8,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Аранчіні (фаршировані рисові кульки)",
             imageResId = R.drawable.aranchinne_stuffed_rice_balls_8_good_pic,
             description =
@@ -218,7 +218,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 9,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Моцарела в кареті",
             imageResId = R.drawable.mozzarella_carrozza_6,
             description =
@@ -250,7 +250,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 10,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Панцанелла",
             imageResId = R.drawable.panzanella_7,
             description =
@@ -280,7 +280,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 13,
-            category = "Антипасти",
+            categoryOfFood = "Антипасти",
             dishTitle = "Вітелло Тоннато (телятина з тунцем під соусом)",
             imageResId = R.drawable.vitello_tonnato_13_new,
             description =
@@ -313,7 +313,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 17,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Лазанья",
             imageResId = R.drawable.lasagna_13,
             description =
@@ -345,7 +345,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 19,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Паста з морепродуктами Scialatielli allo Scoglio",
             imageResId = R.drawable.scialatielli_allo_scoglio_19,
             description =
@@ -382,7 +382,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 20,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Ньоккі алла Соррентіна",
             imageResId = R.drawable.gnocchi_alla_sorrentina_20,
             description =
@@ -421,7 +421,7 @@ object BigListOfFood {
 
         RecipeModel(
             id = 15,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Спагеті карбонара",
             imageResId = R.drawable.carbonara_new11,
             description =
@@ -453,7 +453,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 16,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Феттучіне Альфредо",
             imageResId = R.drawable.fetticine_alfredo_12,
             description = "Феттучіне Альфредо - класична італійська страва з макаронів, відома своїм вершковим, ніжним соусом. Традиційне  Феттучіне Альфредо не підходить для веганської або безмолочної дієти через його багатий соус на основі вершкового масла та вершків . Це вершкова страва з локшини фетучіні, вершкового масла, жирних вершків і сиру пармезан",
@@ -483,7 +483,7 @@ object BigListOfFood {
 
         RecipeModel(
             id = 18,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Равіолі",
             imageResId = R.drawable.ravioli_14,
             description =
@@ -513,7 +513,7 @@ object BigListOfFood {
 
         RecipeModel(
             id = 21,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Пенне з горілкою",
             imageResId = R.drawable.penne_alla_vodka_15,
             description =
@@ -542,7 +542,7 @@ object BigListOfFood {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 22,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Ньоккі",
             imageResId = R.drawable.niokki_gnokki_22,
             description =
@@ -569,7 +569,7 @@ object BigListOfFood {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 23,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Паста Прімавера",
             imageResId = R.drawable.pasta_primavera_17,
             description =
@@ -598,7 +598,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 24,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Ореккетте з броколі рабе",
             imageResId = R.drawable.orecchiette_with_broccoli_rabe_18,
             description =
@@ -628,7 +628,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 25,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Качіо є Пепе",
             imageResId = R.drawable.cacio_e_pepe_19,
             description =
@@ -655,7 +655,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 26,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Папарделле з рагу з дикого кабана",
             imageResId = R.drawable.pappardelle_with_wild_boar_ragu_20,
             description =
@@ -686,7 +686,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 27,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Паста з квасолею",
             imageResId = R.drawable.pasta_e_fagioli_33,
             description =
@@ -720,7 +720,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 28,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Лимонна Пвста",
             imageResId = R.drawable.lemon_paste_pasta_al_limone_86,
             description =
@@ -747,7 +747,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 29,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Ньоккі з фісташковим песто",
             imageResId = R.drawable.gnocchi_with_pistachio_pesto_pesto_87,
             description =
@@ -780,7 +780,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 30,
-            category = "Паста",
+            categoryOfFood = "Паста",
             dishTitle = "Спагеті  Салерно",
             imageResId = R.drawable.spaghetti_in_salerno_style_89,
             description =
@@ -815,7 +815,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 32,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Особуко",
             imageResId = R.drawable.osobuko_32,
             description =
@@ -847,7 +847,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 33,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Сальтімбокка",
             imageResId = R.drawable.saltimbokka_33_small,
             description =
@@ -877,7 +877,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 34,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Баклажани з пармезаном",
             imageResId = R.drawable.baklazhany_z_parmezanom_34_small,
             description =
@@ -910,7 +910,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 35,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Куряча марсала",
             imageResId = R.drawable.kuriacha_marsala_35,
             description =
@@ -942,7 +942,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 36,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Теляча пікката",
             imageResId = R.drawable.teliata_pikatta_36_small,
             description =
@@ -972,7 +972,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 37,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Брачіола",
             imageResId = R.drawable.bracciolla_37_small,
             description =
@@ -1003,7 +1003,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 38,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Порчетта",
             imageResId = R.drawable.porchetta_38_small,
             description =
@@ -1029,7 +1029,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 39,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Фарширований болгарський перець",
             imageResId = R.drawable.farshyrovanyj_bolg_perec_39,
             description =
@@ -1063,7 +1063,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 40,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Бістека ала Фіорентіна - Флорентійський стейк",
             imageResId = R.drawable.bisteka_ala_fiorentina,
             description =
@@ -1091,7 +1091,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 41,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Риба у шаленій воді - Pesce all'Acqua Pazza",
             imageResId = R.drawable.ryba_u_shalenij_vodi,
             description =
@@ -1123,7 +1123,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 42,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Італійський салат з квасолі",
             imageResId = R.drawable.italijskyj_salat_z_kvasoli_42,
             description =
@@ -1154,7 +1154,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 43,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Тефтелі по-неаполітанськи \"Polpette alla Napoletana\"",
             imageResId = R.drawable.polpette_alla_napoletana_43,
             description =
@@ -1199,7 +1199,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 44,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Дорадо з літніми овочами",
             imageResId = R.drawable.darado_z_litnimy_ovochamy_44,
             description =
@@ -1245,7 +1245,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 45,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Морський окунь з томатами і білим вином",
             imageResId = R.drawable.morskii_okun_z_tomatamy_45,
             description =
@@ -1275,7 +1275,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 46,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Гратен з кабачків зі Скаморцо",
             imageResId = R.drawable.graten_z_kabachkiv_slamorzi_46,
             description =
@@ -1311,7 +1311,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 47,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Стейк і середземноморські овочі",
             imageResId = R.drawable.steik_z_ovochamy_47,
             description =
@@ -1342,7 +1342,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 48,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Сицилійський хліб",
             imageResId = R.drawable.sicylijskyj_chlib_48,
             description =
@@ -1374,7 +1374,7 @@ object BigListOfFood {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 49,
-            category = "Основні страви",
+            categoryOfFood = "Основні страви",
             dishTitle = "Смажений свинячий рулет",
             imageResId = R.drawable.smazenyi_svyniachyj_rulet_49,
             description =
@@ -1414,7 +1414,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 51,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Мінестроне",
             imageResId = R.drawable.minestrone_51,
             description =
@@ -1453,7 +1453,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 52,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Тосканський суп",
             imageResId = R.drawable.toskanskyj_sup_52,
             description =
@@ -1490,7 +1490,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 53,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Чоппіно",
             imageResId = R.drawable.choppino_53,
             description =
@@ -1526,7 +1526,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 54,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Риболліта",
             imageResId = R.drawable.rybollitto_54,
             description =
@@ -1563,7 +1563,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 55,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Каччуко",
             imageResId = R.drawable.caccukko_55,
             description =
@@ -1596,7 +1596,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 56,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Рулька по-римски",
             imageResId = R.drawable.trippa_alla_romana_56,
             description =
@@ -1627,7 +1627,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 57,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = " Суп  з помідорів - Паппа аль памодоро",
             imageResId = R.drawable.sup_z_pomodoriv_57,
             description =
@@ -1659,7 +1659,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 58,
-            category = "Супи",
+            categoryOfFood = "Супи",
             dishTitle = "Суп із сочевиці",
             imageResId = R.drawable.sup_iz_sochevytsi_58,
             description =
@@ -1695,7 +1695,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 60,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Маргарита Піца",
             imageResId = R.drawable.ol_margherita_pizza_40,
             description =
@@ -1727,7 +1727,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 61,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Чотири сири",
             imageResId = R.drawable.pizza_chotyry_syry_61_small,
             description =
@@ -1756,7 +1756,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 62,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Неаполітанська",
             imageResId = R.drawable.ol_pizza_napoletana_42,
             description =
@@ -1788,7 +1788,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 63,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Кальцоне",
             imageResId = R.drawable.ol_calzone_43,
             description =
@@ -1822,7 +1822,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 64,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Біла піца або Піца Б'янка.",
             imageResId = R.drawable.ol_pizza_bianca_44,
             description =
@@ -1856,7 +1856,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 65,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Сицилійська піца",
             imageResId = R.drawable.ol_sicilian_pizza_45,
             description =
@@ -1891,7 +1891,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 66,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Фокачча",
             imageResId = R.drawable.ol_focaccia_46,
             description =
@@ -1929,7 +1929,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 67,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Марінара",
             imageResId = R.drawable.ol_pizza_marinara_47,
             description =
@@ -1963,7 +1963,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 68,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца б'янка з лимоном",
             imageResId = R.drawable.ol_pizza_bianca_with_lemon_91,
             description =
@@ -1999,7 +1999,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 69,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца маскарпоне з шинкою",
             imageResId = R.drawable.ol_pizza_with_mascarpone_and_ham_92,
             description =
@@ -2038,7 +2038,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 70,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Капріччоза",
             imageResId = R.drawable.ol_pizza_capricciosa_48,
             description =
@@ -2075,7 +2075,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 71,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Диявола",
             imageResId = R.drawable.ol_pizza_diavola_49,
             description =
@@ -2110,7 +2110,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 72,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Пепероні",
             imageResId = R.drawable.ol_pizza_pepperoni_76,
             description =
@@ -2140,7 +2140,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 73,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Прошутто з грибами",
             imageResId = R.drawable.pizza_prosciutto_e_funghi_77,
             description =
@@ -2174,7 +2174,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 74,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Маргарита з буффала моцареллою",
             imageResId = R.drawable.pizza_margherita_con_bufala_78,
             description =
@@ -2205,7 +2205,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 75,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Романа",
             imageResId = R.drawable.ol_pizza_romana_79,
             description =
@@ -2237,7 +2237,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 76,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Сальсіча та Фріаріеллі",
             imageResId = R.drawable.pizza_salsiccia_e_friarielli_80,
             description =
@@ -2270,7 +2270,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 77,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца Фрутті ді Маре",
             imageResId = R.drawable.pizza_frutti_di_mare_81,
             description =
@@ -2303,7 +2303,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 78,
-            category = "Піца",
+            categoryOfFood = "Піца",
             dishTitle = "Піца з грибами та трюфелем",
             imageResId = R.drawable.pizza_z_grybamy_ta_trufelem_78,
             description =
@@ -2339,7 +2339,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 80,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Різотто по-міланськи",
             imageResId = R.drawable.risotto_alla_milanese_50,
             description =
@@ -2373,7 +2373,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 81,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Полента",
             imageResId = R.drawable.polenta_51,
             description =
@@ -2402,7 +2402,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 82,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Капоната",
             imageResId = R.drawable.caponata_52,
             description =
@@ -2436,7 +2436,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 83,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Перець печений",
             imageResId = R.drawable.perec_pechenyi_83,
             description =
@@ -2464,7 +2464,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 84,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Смажені квіти кабачків",
             imageResId = R.drawable.smazeni_kvity_kabachkiv_84,
             description =
@@ -2496,7 +2496,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 85,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Салат Фарро",
             imageResId = R.drawable.farro_salad_55,
             description =
@@ -2527,7 +2527,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 86,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Рапіні з часником та оливковою олією",
             imageResId = R.drawable.rappini_salad_86,
             description =
@@ -2555,7 +2555,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 87,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Полента на грилі",
             imageResId = R.drawable.polenta_on_grill_87,
             description =
@@ -2583,7 +2583,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 88,
-            category = "Гарніри",
+            categoryOfFood = "Гарніри",
             dishTitle = "Ризотто з абрикосами і гребінцями",
             imageResId = R.drawable.risotto_with_apricots_and_scallops_90,
             description =
@@ -2619,7 +2619,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 90,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Тірамісу",
             imageResId = R.drawable.tiramisu_58,
             description =
@@ -2656,7 +2656,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 91,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Каннолі",
             imageResId = R.drawable.cannoli_59,
             description =
@@ -2682,7 +2682,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 92,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Панна-Котта",
             imageResId = R.drawable.panna_cotta_60,
             description =
@@ -2710,7 +2710,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 93,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Джелато",
             imageResId = R.drawable.dzellatto_93,
             description =
@@ -2741,7 +2741,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 94,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Цепполі",
             imageResId = R.drawable.ceppolli_94,
             description =
@@ -2775,7 +2775,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 95,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Біскотті",
             imageResId = R.drawable.biscotti_63,
             description =
@@ -2809,7 +2809,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 96,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Забайоне",
             imageResId = R.drawable.zabaione_64,
             description =
@@ -2835,7 +2835,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 97,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Амаретто Семіфреддо",
             imageResId = R.drawable.amaretto_semifreddo_65,
             description =
@@ -2866,7 +2866,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 98,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Аффогато",
             imageResId = R.drawable.affogato_66,
             description =
@@ -2891,7 +2891,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 99,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Пиріг з абрикосами у фритюрі",
             imageResId = R.drawable.pyrig_z_abrykodamy_u_frytiuri_99,
             description =
@@ -2928,7 +2928,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 100,
-            category = "Десерти",
+            categoryOfFood = "Десерти",
             dishTitle = "Лимонний пиріг (Torta Al Limone)",
             imageResId = R.drawable.lemon_cacke_torla_al_limone_73,
             description =
@@ -2962,7 +2962,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 101,
-            category = "Хліб",
+            categoryOfFood = "Хліб",
             dishTitle = "Хліб фокачча",
             imageResId = R.drawable.focaccia_bread_67,
             description =
@@ -2995,7 +2995,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 102,
-            category = "Хліб",
+            categoryOfFood = "Хліб",
             dishTitle = "Чіабатта",
             imageResId = R.drawable.ciabatta_68,
             description =
@@ -3024,7 +3024,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 103,
-            category = "Хліб",
+            categoryOfFood = "Хліб",
             dishTitle = "Гріссіні",
             imageResId = R.drawable.grissini_103,
             description =
@@ -3056,7 +3056,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 104,
-            category = "Хліб",
+            categoryOfFood = "Хліб",
             dishTitle = "Тараллі",
             imageResId = R.drawable.taralli_70,
             description =
@@ -3087,7 +3087,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 105,
-            category = "Коктейль",
+            categoryOfFood = "Коктейль",
             dishTitle = "Лимончелло Спритц",
             imageResId = R.drawable.limoncello_spritz_94,
             description =
@@ -3111,7 +3111,7 @@ object BigListOfFood {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
             id = 106,
-            category = "Коктейль",
+            categoryOfFood = "Коктейль",
             dishTitle = "Коктейль Пурпурний",
             imageResId = R.drawable.coctail_purple_106_small,
             description =

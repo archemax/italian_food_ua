@@ -6,5 +6,5 @@ import dagger.hilt.android.HiltAndroidApp
 
 
 @HiltAndroidApp
-class ItalianFoodApplication: Application() {
+class ItalianFoodUkraine: Application() {
 }

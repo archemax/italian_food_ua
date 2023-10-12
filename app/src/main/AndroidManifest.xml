@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name="com.example.italianfoodukraine.dependency_injection.ItalianFoodApplication"
+        android:name="com.example.italianfoodukraine.dependency_injection.ItalianFoodUkraine"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,7 +17,7 @@
         >
         <activity
             android:name=".user_interface.MainActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ItalianFood">

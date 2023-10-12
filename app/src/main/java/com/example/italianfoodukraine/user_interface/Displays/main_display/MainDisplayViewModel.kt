@@ -21,7 +21,7 @@ class MainDisplayViewModel @Inject constructor() : ViewModel() {
 
     fun myFilter(query: String, category: String): List<RecipeModel> {
         val filteredRecipes = _state.value.filter { oneRecipe ->
-            oneRecipe.category.contains(category, ignoreCase = true)
+            oneRecipe.categoryOfFood.contains(category, ignoreCase = true)
                     &&
                     (oneRecipe.dishTitle.contains(query, ignoreCase = true)
                             || oneRecipe.description.contains(query, ignoreCase = true))

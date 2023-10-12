@@ -91,7 +91,7 @@ fun MyOneRecipeDispaly(
                         contentDescription = "arrow back",
                         modifier = Modifier
                             .clickable { navController.popBackStack() }
-                            .padding(top = 8.dp, bottom = 0.dp, start = 8.dp, end = 0.dp))
+                            .padding(16.dp))
                 }
 
                 Row(
@@ -222,7 +222,7 @@ fun MyOneRecipeDispaly(
                             tint = Color(0xFF3F486C)
                         )
                         Text(
-                            text = "  ${recipe?.category}",
+                            text = "  ${recipe?.categoryOfFood}",
                             maxLines = 1,
                             style = TextStyle(
                                 fontSize = 8.sp,
