@@ -148,8 +148,6 @@ fun MainDisplayVerticalLayout(
     queryState: MutableState<String>,
     toOneRecipeScreen: (String) -> Unit,
     finalFilteredList: List<RecipeModel>,
-
-
 ) {
     Spacer(modifier = Modifier.height(16.dp))
     Text(
