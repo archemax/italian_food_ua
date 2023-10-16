@@ -1,5 +1,6 @@
 package com.example.italianfoodukraine.user_interface
 
+import MainDisplayHorizontalLayout
 import android.annotation.SuppressLint
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -123,16 +124,35 @@ fun MyMainDisplay(
                     .fillMaxWidth()
                     .padding(top = 24.dp, start = 0.dp, end = 0.dp)
             ) {}
-            MainDisplayVerticalLayout(
-                //що треба передати
-                configurationOfScreen = configurationOfScreen,
-                toOneRecipeScreen = toOneRecipeScreen,
-                bigListOfRecipesState = bigListOfRecipesState,
-                categoriesOfFood = categoriesOfFood,
-                selectedCategory = selectedCategory,
-                finalFilteredList = finalFilteredList,
-                queryState = queryState
-            )
+
+            when (configurationOfScreen.orientation){
+                Configuration.ORIENTATION_PORTRAIT ->{
+                    MainDisplayVerticalLayout(
+                        //що треба передати
+                        configurationOfScreen = configurationOfScreen,
+                        toOneRecipeScreen = toOneRecipeScreen,
+                        bigListOfRecipesState = bigListOfRecipesState,
+                        categoriesOfFood = categoriesOfFood,
+                        selectedCategory = selectedCategory,
+                        finalFilteredList = finalFilteredList,
+                        queryState = queryState)
+                }
+                Configuration.ORIENTATION_LANDSCAPE ->{
+                    MainDisplayHorizontalLayout(
+                        configurationOfScreen = configurationOfScreen,
+                        bigListOfRecipesState = bigListOfRecipesState,
+                        categoriesOfFood = categoriesOfFood,
+                        selectedCategory = selectedCategory,
+                        queryState = queryState,
+                        toOneRecipeScreen = toOneRecipeScreen,
+                        finalFilteredList = finalFilteredList
+                    )
+
+                }
+
+            }
+
+
         }
     }
 }

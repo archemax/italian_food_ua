@@ -1,16 +1,17 @@
 import android.content.res.Configuration
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ElevatedFilterChip
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChipDefaults
@@ -55,13 +56,13 @@ fun MainDisplayHorizontalLayout(
     ) {
 
         Column() {
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(8.dp))
             Text(
                 text = stringResource(R.string.whatShallWeCook),
                 style = MaterialTheme.typography.headlineLarge
             )
 
-            Column(modifier = Modifier.horizontalScroll(rememberScrollState())) {
+            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
             categoriesOfFood.forEach { category ->
                 val isSelected = category == selectedCategory.value
                 val myElevation: SelectableChipElevation = if (isSelected) {
@@ -105,19 +106,25 @@ fun MainDisplayHorizontalLayout(
 
 ////Recommended for you//////////////////////////////////////////////////////////////////////////////////
 
-        Text(
-            text = stringResource(R.string.Recommendations),
-            style = MaterialTheme.typography.headlineLarge
-        )
-        Spacer(modifier = Modifier.height(12.dp))
+
 //////Recommended for you//////////////////////////////////////////////////////////////////////////////////
 
 
 //////LAZY COLUMN//////////////////////////////////////////////////////////////////////////////////////////////////
         Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = stringResource(R.string.Recommendations),
+                style = MaterialTheme.typography.headlineLarge
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+
+
             LazyVerticalGrid(
                 modifier = Modifier.fillMaxSize(),
-                columns = GridCells.,
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
+                columns = GridCells.Fixed(2),
             ) {
                 items(
                     if (selectedCategory.value.isNotEmpty() || queryState.value.isNotEmpty()) {

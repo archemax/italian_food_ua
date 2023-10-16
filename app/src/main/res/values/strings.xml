@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Italian Recipe Ukraine</string>
     <string name="Recommendations">Рекомендації</string>
-    <string name="whatShallWeCook">Що приготуємо?</string>
+    <string name="whatShallWeCook">Що готуємо?</string>
 </resources>

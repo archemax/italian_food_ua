@@ -47,7 +47,7 @@ import com.example.italianfoodukraine.user_interface.Displays.one_recipe_display
 
 @SuppressLint("SuspiciousIndentation")
 @Composable
-fun MyOneRecipeDispaly(
+fun MyOneRecipeDisplay(
     navController: NavController,
     routeId: String
 ) {
