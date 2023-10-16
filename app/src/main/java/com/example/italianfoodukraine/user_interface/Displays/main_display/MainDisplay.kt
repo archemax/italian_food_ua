@@ -114,9 +114,10 @@ fun MyMainDisplay(
                     if (queryState.value.isNotEmpty()) {
                         Icon(
                             Icons.Default.Clear, contentDescription = null,
-                            modifier = Modifier.clickable {
+                            modifier = Modifier
+                                .clickable {
                                 queryState.value = ""
-                            }
+                            }.padding(12.dp)
                         )
                     }
                 },
@@ -269,7 +270,8 @@ fun OneRecipeItem(
             Image(
 
                 modifier = Modifier
-                    .size(158.dp)
+                    .fillMaxHeight()
+                    .fillMaxWidth(0.4f)
                     .clip(RoundedCornerShape(8.dp)),
                 contentScale = ContentScale.FillHeight,
                 painter = painterResource(id = oneRecipe.imageResId),

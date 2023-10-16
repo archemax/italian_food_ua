@@ -62,7 +62,9 @@ fun MainDisplayHorizontalLayout(
                 style = MaterialTheme.typography.headlineLarge
             )
 
-            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+            Column(modifier = Modifier
+                .padding(end = 8.dp)
+                .verticalScroll(rememberScrollState())) {
             categoriesOfFood.forEach { category ->
                 val isSelected = category == selectedCategory.value
                 val myElevation: SelectableChipElevation = if (isSelected) {

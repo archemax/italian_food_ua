@@ -1,7 +1,5 @@
-package com.example.italianfoodukraine.user_interface.Displays
+package com.example.italianfoodukraine.user_interface.Displays.one_recipe_display
 
-import android.annotation.SuppressLint
-import android.content.res.Configuration
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
@@ -13,12 +11,14 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -41,58 +41,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.italianfoodukraine.R
 import com.example.italianfoodukraine.model.RecipeModel
-import com.example.italianfoodukraine.ui.theme.*
-import com.example.italianfoodukraine.user_interface.Displays.one_recipe_display.OneRecipeDispalyViewModel
-import com.example.italianfoodukraine.user_interface.Displays.one_recipe_display.OneRecipeDisplayHorizontal
 
-@SuppressLint("SuspiciousIndentation")
 @Composable
-fun MyOneRecipeDisplay(
-    configurationOfScreen: Configuration,
-    navController: NavController,
-    routeId: String
-) {
-    val oneRecipeScreenViewModel: OneRecipeDispalyViewModel = hiltViewModel()
-    val id = routeId.toIntOrNull()
-    val recipe =
-        id?.let { oneRecipeScreenViewModel.getOneRecipe(it) }
-
-    when (configurationOfScreen.orientation) {
-        Configuration.ORIENTATION_PORTRAIT -> {
-            OneRecipeDisplayVertical(
-                routeId = routeId,
-                recipe = recipe,
-                navController = navController,
-            )
-
-        }
-
-        Configuration.ORIENTATION_LANDSCAPE -> {
-            OneRecipeDisplayHorizontal(
-                routeId = routeId,
-                recipe = recipe,
-                navController = navController,
-            )
-        }
-    }
-
-
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////
-@Composable
-fun OneRecipeDisplayVertical(
+fun OneRecipeDisplayHorizontal(
     recipe: RecipeModel?,
     routeId: String,
     navController: NavController,
 
-
     ) {
-    Column(
+    Row(
         modifier = Modifier
             .fillMaxSize()
             .padding(top = 0.dp, bottom = 0.dp, start = 0.dp, end = 0.dp)
@@ -101,9 +61,10 @@ fun OneRecipeDisplayVertical(
     {
         Box(
             modifier = Modifier
-                .fillMaxWidth()
-                .background(Color.White),
-            contentAlignment = Alignment.BottomCenter
+                //.fillMaxWidth()
+                .background(Color.White)
+            .clip(RoundedCornerShape(topEnd = 8.dp, bottomEnd = 8.dp))
+            //contentAlignment = Alignment.BottomCenter
 
         ) {
             if (recipe != null)
@@ -112,8 +73,8 @@ fun OneRecipeDisplayVertical(
                     modifier = Modifier
                         //.size(450.dp)
                         .clip(RoundedCornerShape(0.dp))
-                        .fillMaxHeight(0.4f)
-                        .fillMaxWidth(),
+                        .fillMaxHeight()
+                        .fillMaxWidth(0.5f),
                     contentScale = ContentScale.Crop,
                     painter = painterResource(id = recipe.imageResId),
                     contentDescription = "recipe Image",
@@ -128,37 +89,19 @@ fun OneRecipeDisplayVertical(
                         .padding(16.dp))
             }
 
-            Row(
-                // row with the title of dish
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .background(
-                        color = Color.White,
-                        shape = RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp)
-                    )
-                    .padding(top = 8.dp),
-                horizontalArrangement = Arrangement.Center,
 
-                ) {
-                if (recipe != null)
-                    Text(
-                        modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 4.dp),
-                        text = recipe.dishTitle,
-                        maxLines = 2,
-                        style = MaterialTheme.typography.titleLarge
-                    )
-            }
         }
         Spacer(modifier = Modifier.height(16.dp))
 
         Column(
             modifier = Modifier
-                .fillMaxSize()
+                //.fillMaxSize()
                 .padding(start = 0.dp, end = 0.dp)
                 .verticalScroll(rememberScrollState())
                 .background(color = Color.White),
 
             ) {
+
 
 /////////////////////recipe info///////////////////////////////////////////////////////
 
@@ -166,9 +109,34 @@ fun OneRecipeDisplayVertical(
             val text = "${recipe?.description}"
 
             Column(modifier = Modifier.padding(start = 28.dp, end = 28.dp)) {
+
+
+                Row(
+                    // row with the title of dish
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            color = Color.White,
+                            shape = RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp)
+                        )
+                        .padding(top = 8.dp),
+                    horizontalArrangement = Arrangement.Center,
+
+                    ) {
+                    if (recipe != null)
+                        Text(
+                            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 4.dp),
+                            text = recipe.dishTitle,
+                            maxLines = 2,
+                            style = MaterialTheme.typography.titleLarge
+                        )
+                }
+                Spacer(modifier = Modifier.height(16.dp))
+
+
                 //MyCategoryBadge(category = "${recipe?.category}")
 
-                Column(modifier = Modifier
+                Row(modifier = Modifier
                     .animateContentSize(animationSpec = tween(100))
                     .clickable(
                         interactionSource = remember { MutableInteractionSource() },
@@ -193,7 +161,7 @@ fun OneRecipeDisplayVertical(
             Spacer(modifier = Modifier.height(16.dp))
             Column(
                 modifier = Modifier.padding(start = 28.dp),
-                horizontalAlignment = Alignment.Start
+                //horizontalAlignment = Alignment.Start
             ) {
                 Text(
                     text = "Інгредієнти",
@@ -273,13 +241,3 @@ fun OneRecipeDisplayVertical(
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

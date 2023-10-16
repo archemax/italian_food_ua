@@ -44,15 +44,16 @@ fun NavigationComponent() {
             MyOneRecipeDisplay(
                 //configurationOfScreen = configurationOfScreen,
                 navController = navController,
-                routeId = routeId
+                routeId = routeId,
+                configurationOfScreen = configurationOfScreen
 
             )
         }
         ///SPLASH SCREEN/////////////////////////////////////////////////////////////////////
-        composable(route = Screen.SPLASH_SCREEN.name){
+        composable(route = Screen.SPLASH_SCREEN.name) {
             SplashScreen() {
-                navController.navigate(Screen.MAIN_USER_SCREEN.name){
-                    popUpTo(Screen.SPLASH_SCREEN.name){
+                navController.navigate(Screen.MAIN_USER_SCREEN.name) {
+                    popUpTo(Screen.SPLASH_SCREEN.name) {
                         inclusive = true
                     }
                 }
