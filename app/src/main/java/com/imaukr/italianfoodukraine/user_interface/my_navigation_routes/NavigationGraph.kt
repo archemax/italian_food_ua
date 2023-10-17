@@ -8,9 +8,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.italianfoodukraine.user_interface.MyMainDisplay
 import com.example.italianfoodukraine.user_interface.Displays.MyOneRecipeDisplay
 import com.example.italianfoodukraine.user_interface.Displays.SplashScreen
+import com.example.italianfoodukraine.user_interface.MyMainDisplay
 
 @Composable
 fun NavigationComponent() {

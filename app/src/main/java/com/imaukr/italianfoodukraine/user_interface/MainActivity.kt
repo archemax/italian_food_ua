@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresExtension
-import com.imaukr.italianfoodukraine.user_interface.my_navigation_routes.NavigationComponent
 import com.imaukr.italianfoodukraine.ui.theme.ItalianFoodTheme
+import com.imaukr.italianfoodukraine.user_interface.my_navigation_routes.NavigationComponent
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

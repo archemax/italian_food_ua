@@ -1,5 +1,4 @@
 import android.content.res.Configuration
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -35,9 +34,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.imaukr.R
-
-import com.imaukr.italianfoodukraine.model.RecipeModel
 import com.example.italianfoodukraine.user_interface.OneRecipeItem
+import com.imaukr.italianfoodukraine.model.RecipeModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
